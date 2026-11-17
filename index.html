@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeynep Türe | Architecture Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    
+    <div class="site-subtitle">ARCHITECTURE PORTFOLIO</div>
+  </header>
+
+  <main id="home-page">
+    <div class="instruction">CHOOSE A ROOM TO EXPLORE</div>
+
+    
+
+<div class="plan-container">
+  <svg id="floor-plan" viewBox="0 0 1000 680"
+       xmlns="http://www.w3.org/2000/svg">
+
+    <!-- KORİDOR -->
+    <rect x="100" y="280" width="800" height="120" fill="#fafafa" />
+
+    <!-- ODA 01 -->
+    <g class="room" data-room="01">
+      <rect class="room-hit" x="100" y="80" width="400" height="200"/>
+      <text class="room-number" x="300" y="180">01</text>
+      <g class="room-art"></g>
+    </g>
+
+    <!-- ODA 02 -->
+    <g class="room" data-room="02">
+      <rect class="room-hit" x="500" y="80" width="400" height="200"/>
+      <text class="room-number" x="700" y="180">02</text>
+      <g class="room-art"></g>
+    </g>
+
+    <!-- ODA 03 -->
+    <g class="room" data-room="03">
+      <rect class="room-hit" x="100" y="400" width="265" height="200"/>
+      <text class="room-number" x="232" y="500">03</text>
+      <g class="room-art"></g>
+    </g>
+
+    <!-- ODA 04 -->
+    <g class="room" data-room="04">
+      <rect class="room-hit" x="365" y="400" width="270" height="200"/>
+      <text class="room-number" x="500" y="500">04</text>
+      <g class="room-art"></g>
+    </g>
+
+    <!-- ODA 05 -->
+    <g class="room" data-room="05">
+      <rect class="room-hit" x="635" y="400" width="265" height="200"/>
+      <text class="room-number" x="767" y="500">05</text>
+      <g class="room-art"></g>
+    </g>
+
+    <!-- DUVARLAR -->
+    <g class="walls" fill="none" stroke="#171717"
+       stroke-width="7" stroke-linecap="square">
+
+      <!-- Dış sınır -->
+      <rect x="100" y="80" width="800" height="520"/>
+
+      <!-- Üst oda ayrımı -->
+      <line x1="500" y1="80" x2="500" y2="280"/>
+
+      <!-- Koridorun üst duvarı: kapı boşlukları -->
+      <path d="M100 280 H260 M340 280 H660 M740 280 H900"/>
+
+      <!-- Koridorun alt duvarı: kapı boşlukları -->
+      <path d="M100 400 H195 M270 400 H460 M540 400 H730 M805 400 H900"/>
+
+      <!-- Alt oda ayrımları -->
+      <line x1="365" y1="400" x2="365" y2="600"/>
+      <line x1="635" y1="400" x2="635" y2="600"/>
+    </g>
+
+    <!-- KORİDOR YAZISI -->
+    <text x="500" y="348" text-anchor="middle"
+          font-size="15" letter-spacing="5"
+          fill="#999">CENTRAL CORRIDOR</text>
+
+
+<!-- KAPI KANATLARI VE AÇILIM YAYLARI -->
+<g class="doors" fill="none" stroke="#171717"
+   stroke-width="2.5">
+
+  <!-- ÜST SOL ODA -->
+  <path d="M260 280 V200"/>
+  <path d="M340 280 A80 80 0 0 0 260 200"/>
+
+  <!-- ÜST SAĞ ODA -->
+  <path d="M740 280 V200"/>
+  <path d="M660 280 A80 80 0 0 1 740 200"/>
+
+  <!-- ALT SOL ODA -->
+  <path d="M195 400 V475"/>
+  <path d="M270 400 A75 75 0 0 1 195 475"/>
+
+  <!-- ALT ORTA ODA -->
+  <path d="M460 400 V480"/>
+  <path d="M540 400 A80 80 0 0 1 460 480"/>
+
+  <!-- ALT SAĞ ODA -->
+  <path d="M805 400 V475"/>
+  <path d="M730 400 A75 75 0 0 0 805 475"/>
+
+</g>
+
+
+  </svg>
+</div>
+
+
+
+    <div class="bottom-note">FIVE ROOMS · FIVE PROJECTS</div>
+  </main>
+
+  <!-- PROJE DETAY SAYFASI -->
+  <main id="project-page" class="hidden">
+    <button id="back-button">← BACK TO PLAN</button>
+
+    
+<div class="project-content">
+
+  <div class="project-heading">
+    <div class="project-number" id="project-number">01</div>
+    <div>
+      <div class="project-category">ARCHITECTURAL DESIGN</div>
+      <h1 id="project-title">PROJECT TITLE</h1>
+    </div>
+  </div>
+
+  <p class="project-description" id="project-description">
+    Project description will appear here.
+  </p>
+
+  <div class="project-section-title">SELECTED WORKS</div>
+
+  <div id="project-gallery" class="project-gallery"></div>
+
+</div>
+
+  </main>
+
+
+<div id="final-screen">
+
+  <div class="final-name">ZEYNEP TÜRE</div>
+
+  <div class="new-room">
+    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+
+      <!-- Yeni odanın duvarları -->
+      <path class="room-outline"
+        d="M80 230 V55 H420 V230 H300 M200 230 H80"/>
+
+      <!-- Kapı açılımı -->
+      <path class="room-door"
+        d="M200 230 V130 M300 230 A100 100 0 0 0 200 130"/>
+
+      <!-- Oda numarası -->
+      <text x="250" y="155" class="new-room-number">
+        06 — ?
+      </text>
+
+      <text x="250" y="180" class="new-room-caption">
+        TO BE DESIGNED
+      </text>
+
+    </svg>
+  </div>
+
+  <button id="return-projects">
+    RETURN TO PROJECTS →
+  </button>
+
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
